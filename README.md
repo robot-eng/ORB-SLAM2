@@ -1,7 +1,7 @@
 # ORB-SLAM2
 #### ไม่สามารถเอาไฟล์ลงได้เนื่องจากขนาดไฟล์เกินจากที่กำหนด
 โหลดไฟล์ตั้งต้นได้จาก https://github.com/raulmur/ORB_SLAM2
-
+`Note : want opencv 3+ (Ubuntu18.04)
 #### Fix file at download come
 ##### Comeing Soon
 
