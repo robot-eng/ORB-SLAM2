@@ -33,13 +33,39 @@ Usleep (3000);
 ###### src/system.cc
 ###### src/tracking.cc
 ###### src/viewer.cc
-#### Cuda Error
+#### Cuda Error :
 ##### Cuda-related errors occur when a Cuda-installed machine is compiled, and the modified build.sh are as follows:
 ###### cd Thirdparty/dbow2
 ###### mkdir Build
 ###### cd  Build
 ###### cmake
 ###### make
+##### Error message:
+/home/melanie/tools/eigen/eigen/src/core/assignevaluator.h:817:3: Error:static Assertion Failed:you_mixed_ different_numeric_types__you_need_to_use_the_cast_method_of_matrixbase_to_cast_numeric_types_explicitly
+Eigen_check_binary_compatibiliy (Func,typename actualdsttypecleaned::scalar,typename Src::Scalar);
+^
+##### Solution:
+
+Open Thirdparty/g2o/g2o/solvers/linear_solver_eigen.h, and the following code
+```
+Template <typename matrixtype>
+Class Linearsolvereigen:public Linearsolver<matrixtype>
+{
+Public
+typedef eigen::sparsematrix<double, eigen::colmajor> Sparsematrix;
+typedef eigen::triplet<double> Triplet;
+typedef Eigen::P Ermutationmatrix<eigen::D ynamic, Eigen::D ynamic, sparsematrix::index> Permutationmatrix;
+```
+Modified to:
+```
+Template <typename matrixtype>
+Class Linearsolvereigen:public Linearsolver<matrixtype>
+{
+Public
+typedef eigen::sparsematrix<double, eigen::colmajor> Sparsematrix;
+typedef eigen::triplet<double> Triplet;
+typedef Eigen::P Ermutationmatrix<eigen::D ynamic, Eigen::D ynamic, int> Permutationmatrix;
+```
 ## D435i 
 ###### add file.ymal in ORB_SLAM2/Examples/RGB-D
 ```
