@@ -2,27 +2,32 @@
 #### ไม่สามารถเอาไฟล์ลงได้เนื่องจากขนาดไฟล์เกินจากที่กำหนด
 โหลดไฟล์ตั้งต้นได้จาก https://github.com/raulmur/ORB_SLAM2
 `Note : want opencv 3+ (Ubuntu18.04) and cmake 3.8+`
-- install Pangolin
+
+Install Pangolin
 ###### git clone https://github.com/stevenlovegrove/Pangolin.git
 ###### cd Pangolin
 ###### mkdir build
 ###### cd build
 ###### cmake ..
 ###### make
-- install CHOLMOD, BLAS, LAPACK and Eigen3.
+Install CHOLMOD, BLAS, LAPACK and Eigen3.
 ```
 sudo apt-get install libsuitesparse-dev
 sudo apt-get install libblas-dev
 sudo apt-get install liblapack-dev
 sudo apt-get install libeigen3-dev
 ```
+##### Vocabulary
+```
+tar -xzvf ORBvoc.txt.tar.gz
+```
 #### Fix file at download come
 
 Error message:
 
-/home/melanie/source/smartcar/orm_slam2/orb_slam2/src/viewer.cc:159:28:error: ' Usleep ' is not declared in this scope
+###### /home/melanie/source/smartcar/orm_slam2/orb_slam2/src/viewer.cc:159:28:error: ' Usleep ' is not declared in this scope
 Usleep (3000);
-##### Also don't forget to add this line on most files.cc ( in the top )
+#### Also don't forget to add this line on most files.cc ( in the top )
 ###### include <unistd.h>
 
 ##### File in folder src:
@@ -45,7 +50,7 @@ Usleep (3000);
 ###### cmake
 ###### make
 ##### Error message:
-/home/melanie/tools/eigen/eigen/src/core/assignevaluator.h:817:3: Error:static Assertion Failed:you_mixed_ different_numeric_types__you_need_to_use_the_cast_method_of_matrixbase_to_cast_numeric_types_explicitly
+###### /home/melanie/tools/eigen/eigen/src/core/assignevaluator.h:817:3: Error:static Assertion Failed:you_mixed_ different_numeric_types__you_need_to_use_the_cast_method_of_matrixbase_to_cast_numeric_types_explicitly
 Eigen_check_binary_compatibiliy (Func,typename actualdsttypecleaned::scalar,typename Src::Scalar);
 ^
 ##### Solution:
