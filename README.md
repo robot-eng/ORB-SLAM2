@@ -84,3 +84,8 @@ Viewer.ViewpointF: 500
 ###### Node : https://github.com/IntelRealSense/realsense-ros#installation-instructions
 #### ORB_SLAM2 + D435i
 ###### link : https://blog.csdn.net/qq_36898914/article/details/88780649
+```
+roscore
+roslaunch realsense2_camera rs_rgbd.launch
+rosrun ORB_SLAM2 RGBD Vocabulary/ORBvoc.txt Examples/RGB-D/D435i.ymal
+```
