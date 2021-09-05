@@ -35,7 +35,7 @@ Usleep (3000);
 ###### src/viewer.cc
 #### Cuda Error :
 ##### Cuda-related errors occur when a Cuda-installed machine is compiled, and the modified build.sh are as follows:
-###### cd Thirdparty/dbow2
+###### cd Thirdparty/DBow2 , cd Thirdparty/g2o 
 ###### mkdir Build
 ###### cd  Build
 ###### cmake
