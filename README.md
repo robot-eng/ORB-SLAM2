@@ -79,3 +79,6 @@ Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500
 ```
+##### Realsense D435i ROS
+SDK  : https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages
+Node : https://github.com/IntelRealSense/realsense-ros#installation-instructions
