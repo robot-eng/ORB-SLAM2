@@ -6,26 +6,33 @@
 ###### Let me add the name of the file in question :
 ###### Thirdparty/g2o/g2o/solvers/linear_solver_eigen.h
 
-###### typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::Index> PermutationMatrix;
-###### to typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::StorageIndex> PermutationMatrix;
+###### 
+```
+typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::Index> PermutationMatrix;
+```
+###### to 
+```
+typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::StorageIndex> PermutationMatrix;
+```
+Error message:
 
-###### Also don't forget to add this line on most files.cc ( in the top )
+/home/melanie/source/smartcar/orm_slam2/orb_slam2/src/viewer.cc:159:28:error: ' Usleep ' is not declared in this scope
+Usleep (3000);
+##### Also don't forget to add this line on most files.cc ( in the top )
 ###### include <unistd.h>
 
-###### File in folder src:
-###### LocalMapping.cc
-###### System.cc
-###### Tracking.cc
-###### Viewer.cc
-###### LoopClosing.cc
-
-###### And in folder Examples...
-###### stereo_euroc.cc
-###### stereo_kitti.cc
-###### rgbd_tum.cc
-###### mono_kitti.cc
-###### mono_tum.cc
-###### mono_euro.cc
+##### File in folder src:
+###### examples/monocular/mono_euroc.cc
+###### examples/monocular/mono_kitti.cc
+###### examples/monocular/mono_tum.cc
+###### examples/rgb-d/rgbd_tum.cc
+###### examples/stereo/stereo_euroc.cc
+###### examples/stereo/stereo_kitti.cc
+###### src/localmapping.cc
+###### src/loopclosing.cc
+###### src/system.cc
+###### src/tracking.cc
+###### src/viewer.cc
 
 ## D435i 
 ###### add file.ymal in ORB_SLAM2/Examples/RGB-D
