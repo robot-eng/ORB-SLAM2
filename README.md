@@ -9,8 +9,11 @@
 ###### cd build
 ###### cmake ..
 ###### make
-- install Eigen3
+- install CHOLMOD, BLAS, LAPACK and Eigen3.
 ```
+sudo apt-get install libsuitesparse-dev
+sudo apt-get install libblas-dev
+sudo apt-get install liblapack-dev
 sudo apt-get install libeigen3-dev
 ```
 #### Fix file at download come
