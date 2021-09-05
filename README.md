@@ -3,6 +3,7 @@
 โหลดไฟล์ตั้งต้นได้จาก https://github.com/raulmur/ORB_SLAM2
 
 ## D435i 
+###### add file.ymal in ORB_SLAM2/Examples/RGB-D
 ```
 %YAML:1.0
 
