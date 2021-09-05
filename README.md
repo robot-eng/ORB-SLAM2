@@ -194,3 +194,5 @@ export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/test/slam/ORB_SLAM2-master/Exa
 ```
 source ~/.bashrc
 ```
+## WebCam usb_cam
+link : https://www.huaweicloud.com/articles/12586449.html
