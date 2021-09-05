@@ -3,7 +3,29 @@
 โหลดไฟล์ตั้งต้นได้จาก https://github.com/raulmur/ORB_SLAM2
 `Note : want opencv 3+ (Ubuntu18.04) and cmake 3.8+`
 #### Fix file at download come
-##### Comeing Soon
+###### Let me add the name of the file in question :
+###### Thirdparty/g2o/g2o/solvers/linear_solver_eigen.h
+
+###### typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::Index> PermutationMatrix;
+###### to typedef Eigen::PermutationMatrix<Eigen::Dynamic, Eigen::Dynamic, SparseMatrix::StorageIndex> PermutationMatrix;
+
+###### Also don't forget to add this line on most files.cc ( in the top )
+####### include <unistd.h>
+
+###### File in folder src:
+###### LocalMapping.cc
+###### System.cc
+###### Tracking.cc
+###### Viewer.cc
+###### LoopClosing.cc
+
+###### And in folder Examples...
+###### stereo_euroc.cc
+###### stereo_kitti.cc
+###### rgbd_tum.cc
+###### mono_kitti.cc
+###### mono_tum.cc
+###### mono_euro.cc
 
 ## D435i 
 ###### add file.ymal in ORB_SLAM2/Examples/RGB-D
