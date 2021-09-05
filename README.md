@@ -2,6 +2,17 @@
 #### ไม่สามารถเอาไฟล์ลงได้เนื่องจากขนาดไฟล์เกินจากที่กำหนด
 โหลดไฟล์ตั้งต้นได้จาก https://github.com/raulmur/ORB_SLAM2
 `Note : want opencv 3+ (Ubuntu18.04) and cmake 3.8+`
+- install Pangolin
+###### git clone https://github.com/stevenlovegrove/Pangolin.git
+###### cd Pangolin
+###### mkdir build
+###### cd build
+###### cmake ..
+###### make
+- install Eigen3
+```
+sudo apt-get install libeigen3-dev
+```
 #### Fix file at download come
 
 Error message:
