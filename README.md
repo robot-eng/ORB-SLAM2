@@ -33,7 +33,13 @@ Usleep (3000);
 ###### src/system.cc
 ###### src/tracking.cc
 ###### src/viewer.cc
-
+#### Cuda Error
+##### Cuda-related errors occur when a Cuda-installed machine is compiled, and the modified build.sh are as follows:
+##### cd Thirdparty/dbow2
+##### mkdir Build
+##### cd  Build
+##### cmake
+##### make
 ## D435i 
 ###### add file.ymal in ORB_SLAM2/Examples/RGB-D
 ```
