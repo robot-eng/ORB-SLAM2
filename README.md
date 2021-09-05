@@ -105,7 +105,10 @@ Viewer.ViewpointF: 500
 ###### SDK  : https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages
 ###### Node : https://github.com/IntelRealSense/realsense-ros#installation-instructions
 #### ORB_SLAM2 + D435i
-###### sudo apt install ros-melodic-rgbd-launch
+###### Solution: install the rgbd-launch package with the command (make sure to adjust the ROS distro if needed):
+```
+sudo apt install ros-melodic-rgbd-launch
+```
 ###### link : https://blog.csdn.net/qq_36898914/article/details/88780649
 ```
 roscore
