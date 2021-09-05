@@ -148,6 +148,7 @@ Viewer.ViewpointF: 500
 ###### SDK  : https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages
 ###### Node : https://github.com/IntelRealSense/realsense-ros#installation-instructions
 #### ORB_SLAM2 + D435i
+###### เว็บไซต์ตั้งต้นตัวอย่าง : https://www.fatalerrors.org/a/orb-slam-2-based-on-depth-camera-realsense-d435i.html
 ###### Solution: install the rgbd-launch package with the command (make sure to adjust the ROS distro if needed):
 ```
 sudo apt install ros-melodic-rgbd-launch
