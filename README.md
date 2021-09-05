@@ -158,3 +158,39 @@ roscore
 roslaunch realsense2_camera rs_rgbd.launch
 rosrun ORB_SLAM2 RGBD Vocabulary/ORBvoc.txt Examples/RGB-D/D435i.ymal
 ```
+### ./build_ros.sh
+stayExamples/ROS/ORB_SLAM2/CMakeLists.txtAdd compilation information to file – lboost_ systema
+```
+set(LIBS 
+      ${OpenCV_LIBS} 
+      ${EIGEN3_LIBS}
+      ${Pangolin_LIBRARIES}
+      ${PROJECT_SOURCE_DIR}/../../../Thirdparty/DBoW2/lib/libDBoW2.so
+      ${PROJECT_SOURCE_DIR}/../../../Thirdparty/g2o/lib/libg2o.so
+      ${PROJECT_SOURCE_DIR}/../../../lib/libORB_SLAM2.so
+      -lboost_ Systema? Add this item
+  )
+```
+find ROS package or ROS
+Test method
+
+    echo $ROS_ROOT
+      /opt/ros/melodic/share/ros
+    echo $ROS_PACKAGE_PATH
+      /opt/ros/melodic/share:/home/test/slam/ORB_SLAM2-master/Examples/ROS/ORB_SLAM2
+Solution
+
+User directory in. Bashrc
+
+###### Add ROS in order_ root path
+```
+source /opt/ros/melodic/setup.bash
+```
+###### Add ROS_ package_ path
+```
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/test/slam/ORB_SLAM2-master/Examples/ROS/ORB_SLAM2
+```
+###### Apply added environment variables
+```
+source ~/.bashrc
+```
