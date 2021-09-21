@@ -41,6 +41,7 @@ Usleep (3000);
 ###### src/loopclosing.cc
 ###### src/system.cc
 ###### src/tracking.cc
+###### examples/ros/orb-slam2/src/vr/ViewerAR.cc
 ###### src/viewer.cc
 #### Cuda Error :
 ##### Cuda-related errors occur when a Cuda-installed machine is compiled, and the modified build.sh are as follows:
