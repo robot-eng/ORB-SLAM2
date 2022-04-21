@@ -205,3 +205,14 @@ source ~/.bashrc
 link : https://www.huaweicloud.com/articles/12586449.html
 ## astra fix
 link : https://blog.csdn.net/crp997576280/article/details/104220926
+##### error while loading shared libraries: libpango_core.so
+```
+sudo gedit /etc/ld.so.conf
+```
+add 
+```
+include /usr/local/lib
+```
+```
+sudo ldconfig
+```
