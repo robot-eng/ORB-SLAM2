@@ -203,3 +203,5 @@ source ~/.bashrc
 ```
 ## WebCam usb_cam
 link : https://www.huaweicloud.com/articles/12586449.html
+## astra fix
+link : https://blog.csdn.net/crp997576280/article/details/104220926
